@@ -15,12 +15,12 @@ public class CreateUser
 		 Response resp = given()
 				        .body("{\r\n"
 				        		+ "  \"id\": 0,\r\n"
-				        		+ "  \"username\": \"sandhyafule\",\r\n"
-				        		+ "  \"firstName\": \"sandhya\",\r\n"
-				        		+ "  \"lastName\": \"fule\",\r\n"
-				        		+ "  \"email\": \"fulesandhya@gmail.com\",\r\n"
-				        		+ "  \"password\": \"Pass1@123\",\r\n"
-				        		+ "  \"phone\": \"8855223366\",\r\n"
+				        		+ "  \"username\": \"amar\",\r\n"
+				        		+ "  \"firstName\": \"Amar\",\r\n"
+				        		+ "  \"lastName\": \"Shah\",\r\n"
+				        		+ "  \"email\": \"AmarShah@gmail.com\",\r\n"
+				        		+ "  \"password\": \"Pass@123\",\r\n"
+				        		+ "  \"phone\": \"1122334455\",\r\n"
 				        		+ "  \"userStatus\": 0\r\n"
 				        		+ "}")
 				        .header("content-type","application/json")
@@ -44,7 +44,7 @@ public class CreateUser
 		RestAssured.baseURI="https://petstore.swagger.io/v2";
 		Response resp = given()
 				       .when()
-				       .get("/user/salman")
+				       .get("/user/amar")
 				       .then()
 				       .extract()
 				       .response();
